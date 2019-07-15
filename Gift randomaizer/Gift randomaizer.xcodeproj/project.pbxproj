@@ -18,6 +18,7 @@
 		1FCB2F3222C491EC00508000 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB2F3122C491EC00508000 /* SettingsTableViewController.swift */; };
 		1FCB2F3422C4C18100508000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FCB2F3322C4C18100508000 /* Default-568h@2x.png */; };
 		1FCB2F3622C4D4C500508000 /* ListNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCB2F3522C4D4C500508000 /* ListNames.swift */; };
+		1FDA71C322C9F37400D1A3CD /* RandomizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA71C222C9F37400D1A3CD /* RandomizerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		1FCB2F3122C491EC00508000 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		1FCB2F3322C4C18100508000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1FCB2F3522C4D4C500508000 /* ListNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNames.swift; sourceTree = "<group>"; };
+		1FDA71C222C9F37400D1A3CD /* RandomizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomizerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				1FCB2EFE22C3B1ED00508000 /* AppDelegate.swift */,
 				1FCB2F0022C3B1ED00508000 /* MenuViewController.swift */,
 				1FCB2F2D22C3D3C000508000 /* ListTableViewController.swift */,
+				1FDA71C222C9F37400D1A3CD /* RandomizerViewController.swift */,
 				1FCB2F3122C491EC00508000 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
@@ -296,6 +299,7 @@
 				1FCB2F3222C491EC00508000 /* SettingsTableViewController.swift in Sources */,
 				1FCB2F2E22C3D3C000508000 /* ListTableViewController.swift in Sources */,
 				1FCB2F0122C3B1ED00508000 /* MenuViewController.swift in Sources */,
+				1FDA71C322C9F37400D1A3CD /* RandomizerViewController.swift in Sources */,
 				1FCB2F3622C4D4C500508000 /* ListNames.swift in Sources */,
 				1FCB2EFF22C3B1ED00508000 /* AppDelegate.swift in Sources */,
 			);

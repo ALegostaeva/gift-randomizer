@@ -13,7 +13,7 @@
         <!--Menu View Controller-->
         <scene sceneID="FUi-Pb-Qaz">
             <objects>
-                <viewController storyboardIdentifier="MenuScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hso-oz-GJF" customClass="MenuViewController" customModule="Gift_randomaizer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hso-oz-GJF" customClass="MenuViewController" customModule="Gift_randomaizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="msB-O9-CCD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,13 +65,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameInList" id="Ri9-T9-uu7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NameInList" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NameInList" id="Ri9-T9-uu7">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="NameInList" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ri9-T9-uu7" id="X2s-f2-P8A">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ri9-T9-uu7" id="X2s-f2-P8A">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AddName" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddName" id="Wie-2x-o0B">
+                                <rect key="frame" x="0.0" y="72" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wie-2x-o0B" id="3u2-2C-5AT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" selected="YES" keyboardKey="YES"/>
+                                </accessibility>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -112,29 +123,23 @@
             </objects>
             <point key="canvasLocation" x="1006" y="423"/>
         </scene>
-        <!--View Controller-->
+        <!--Randomizer View Controller-->
         <scene sceneID="fU6-kX-4Mc">
             <objects>
-                <viewController storyboardIdentifier="ShakeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PgB-Ao-IiS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RandomizerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PgB-Ao-IiS" customClass="RandomizerViewController" customModule="Gift_randomaizer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ie-Wt-6zi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="shakeMe" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Shake me" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71l-wE-d3X">
-                                <rect key="frame" x="159" y="433" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                        </accessibility>
                         <viewLayoutGuide key="safeArea" id="y4J-Ga-I4R"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBg-sn-Dg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767" y="-244"/>
+            <point key="canvasLocation" x="1766.6666666666667" y="-244.41964285714283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oYz-Fq-YoF">

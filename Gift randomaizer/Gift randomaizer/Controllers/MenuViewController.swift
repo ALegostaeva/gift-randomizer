@@ -25,6 +25,7 @@ class MenuViewController: UIViewController {
 
     private func addView() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Help", style: .plain, target: self, action: #selector(showAbout))
+        navigationItem.hidesBackButton = true
     }
     
     @objc private func showAbout() {
@@ -34,11 +35,12 @@ class MenuViewController: UIViewController {
         Here you can make a list of your relatives and close people.
         
         Make a list.
-        Press "Done".
-        Shake.
+        Press "Randome it!".
+        Ready to randomize!
+        Shake the phone.
         You will see the name of person, whom you will make a present.
-        
-        Turn to the next.
+        If you want another name - just tap on the name and it will stay in the list and you will see a next random name.
+
         """
             
         let ac = UIAlertController(title: "Information", message: message, preferredStyle: .alert)
